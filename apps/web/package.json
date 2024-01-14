@@ -3,12 +3,15 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev --port 3001",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
+    "@vercel/analytics": "^1.1.1",
+    "embla-carousel-autoplay": "8.0.0-rc19",
+    "embla-carousel-wheel-gestures": "8.0.0-rc05",
     "next": "^13.4.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

@@ -1,6 +1,6 @@
 {
   "extends": "tsconfig/react-library.json",
-  "include": ["."],
+  "include": [".", "../../apps/docs/contentlayer.config.js", "../../apps/docs/patterns/framework-docs.tsx", "../../apps/docs/patterns/mdx-components.tsx", "../../apps/docs/types/unist.ts", "../../apps/docs/lib/rehype-npm-command.ts", "../../apps/docs/lib/rehype-component.ts", "../../apps/docs/lib/events.ts", "../../apps/docs/patterns/sidebar-nav.tsx"],
   "exclude": ["dist", "build", "node_modules"],
   "compilerOptions": {
     "baseUrl": ".",
