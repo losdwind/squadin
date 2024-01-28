@@ -193,8 +193,15 @@ export function Squads({
           <TabsContent value="all" className="m-0">
             <SquadList items={squads} />
           </TabsContent>
-          <TabsContent value="unread" className="m-0">
-            <SquadList items={squads.filter((item) => item.status === "listed")} />
+          <TabsContent value="active" className="m-0">
+            <SquadList
+              items={squads.filter((item) => item.status === "listed")}
+            />
+          </TabsContent>
+          <TabsContent value="disengaged" className="m-0">
+            <SquadList
+              items={squads.filter((item) => item.status === "")}
+            />
           </TabsContent>
         </Tabs>
         <div className="flex-1">

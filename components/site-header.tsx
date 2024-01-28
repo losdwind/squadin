@@ -60,6 +60,23 @@ export function SiteHeader() {
                 <span className="sr-only">Twitter</span>
               </div>
             </Link>
+            <Link
+              href={siteConfig.links.discord}
+              target="_blank"
+              rel="noreferrer"
+            >
+              <div
+                className={cn(
+                  buttonVariants({
+                    variant: "ghost",
+                  }),
+                  "w-9 px-0"
+                )}
+              >
+                <Icons.discord className="h-3 w-3 fill-current" />
+                <span className="sr-only">Discord</span>
+              </div>
+            </Link>
             <ModeToggle />
           </nav>
         </div>

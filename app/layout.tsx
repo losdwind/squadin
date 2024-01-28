@@ -85,7 +85,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
             disableTransitionOnChange
           >
             <div vaul-drawer-wrapper="">
-              <div className="relative h-screen bg-background overflow-hidden">
+              <div className="h-screen bg-background overflow-auto">
                 <SiteHeader />
                 <main className="">{children}</main>
                 {/* <SiteFooter /> */}
